@@ -4,6 +4,7 @@
   --botao-azul: #167BF7;
   --cor-de-fundo: #00030C;
   --fonte-principal: 'Inter';
+  --botao-azul-efeito:#96b7e0;
 }
 
 body {
@@ -30,6 +31,7 @@ background-image: url("Background.png");
 background-repeat: no-repeat;  
 background-size: contain;
 align-items: center;
+text-align: center;
 }
 
 .container__botao {
@@ -41,6 +43,10 @@ display: block;
 text-decoration: none;
 margin-bottom: 1em
 
+}
+.container__botao:hover{
+background-color: var(--botao-azul-efeito);
+color: var(--cor-de-fundo);
 }
 .botao_secundario {
 background-color: transparent;
@@ -72,4 +78,295 @@ margin-top: 1em;
 
 .container__descricao {
 padding: 2em;
+}
+
+.secundario__imagem {
+width: 80%;
+}
+
+.secundario {
+align-items: center;
+margin:0 10em;
+}
+
+.descricao__titulo {
+font-weight: 700;
+font-size:48px;
+color:var(--branco-principal);
+margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+color: var(--cinza-secundario);
+}
+
+.dispositivos__lista {
+display: flex;
+justify-content: center;
+list-style-type:none;
+margin: 5em 0;
+}
+
+.dispositivos {
+text-align: center;
+}
+
+.dispositivos__titulo {
+font-size: 48px;
+color:var(--branco-principal);
+}
+
+.lista__item {
+font-size: 32px;
+color:var(--branco-principal);
+}
+
+.rodape__lista {
+display: flex;
+justify-content: center;
+list-style-type: none;
+margin-top: 1em;
+}
+
+.lista__link a{
+text-decoration: none;
+text-decoration: none;
+color: var(--branco-principal);
+margin: 0 16px 0 16px;
+font-size: 14px;
+}
+
+.rodape__texto {
+margin: 1em 0;
+color: var(--cinza-secundario);
+font-size: 12px;
+}
+  
+.rodape {
+text-align: center;
+margin: 5em 3em;
+}:root {
+2
+  --branco-principal: #FFFFFF;
+3
+  --cinza-secundario: #C0C0C0;
+4
+  --botao-azul: #167BF7;
+5
+  --cor-de-fundo: #00030C;
+6
+  --fonte-principal: 'Inter';
+7
+}
+8
+​
+9
+body {
+10
+  background-color: var(--cor-de-fundo);
+11
+  color: var(--branco-principal);
+12
+  font-family: var(--fonte-principal);
+13
+  font-size: 16px;
+14
+  font-weight: 400;
+15
+}:root {
+2
+  --branco-principal: #FFFFFF;
+3
+  --cinza-secundario: #C0C0C0;
+4
+  --botao-azul: #167BF7;
+5
+  --cor-de-fundo: #00030C;
+6
+  --fonte-principal: 'Inter';
+7
+}
+8
+​
+9
+body {
+10
+  background-color: var(--cor-de-fundo);
+11
+  color: var(--branco-principal);
+12
+  font-family: var(--fonte-principal);
+13
+  font-size: 16px;
+14
+  font-weight: 400;
+15
+}
+16
+​
+17
+* {
+18
+  margin: 0;
+19
+  padding: 0;
+20
+}
+21
+​
+22
+.container {
+23
+height: 100vh;
+24
+display:grid;
+25
+grid-template-columns: 50% 50%;
+26
+}
+27
+​
+28
+.principal {
+29
+background-image: url("Background.png");
+30
+background-repeat: no-repeat;  
+31
+background-size: contain;
+32
+align-items: center;
+33
+}
+34
+​
+35
+.container__botao {
+36
+background-color: var(--botao-azul);
+37
+border-radius: 5px;
+38
+padding: 1em;
+39
+color: var(--branco-principal);
+40
+display: block;
+41
+text-decoration: none;
+42
+margin-bottom: 1em
+43
+​
+44
+}
+45
+.botao_secundario {
+46
+background-color: transparent;
+47
+border: 2px solid var(--branco-principal);
+48
+}
+49
+​
+50
+.container__aviso {
+51
+font-size:12px;
+52
+color: var(--cinza-secundario);
+53
+}
+54
+​
+55
+.container__titulo {
+16
+​
+17
+* {
+18
+  margin: 0;
+19
+  padding: 0;
+20
+}
+21
+​
+22
+.container {
+23
+height: 100vh;
+24
+display:grid;
+25
+grid-template-columns: 50% 50%;
+26
+}
+27
+​
+28
+.principal {
+29
+background-image: url("Background.png");
+30
+background-repeat: no-repeat;  
+31
+background-size: contain;
+32
+align-items: center;
+33
+}
+34
+​
+35
+.container__botao {
+36
+background-color: var(--botao-azul);
+37
+border-radius: 5px;
+38
+padding: 1em;
+39
+color: var(--branco-principal);
+40
+display: block;
+41
+text-decoration: none;
+42
+margin-bottom: 1em
+43
+​
+44
+}
+45
+.botao_secundario {
+46
+background-color: transparent;
+47
+border: 2px solid var(--branco-principal);
+48
+}
+49
+​
+50
+.container__aviso {
+51
+font-size:12px;
+52
+color: var(--cinza-secundario);
+53
+}
+54
+​
+55
+.container__titulo {
+  
+.lista__link a:hover {
+color: var(--botao-azul);
+}
+  
+.lista__link a:active {
+color: purple;
 }
